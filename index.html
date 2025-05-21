@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css"> 
+<body>
+  <!-- Header -->
+  <header>
+    <div class="menu-icon" onclick="toggleSidebar()">
+      <i class="fas fa-bars"></i><span>DashBoard</span>
+    </div>
+    <div class="search-wrapper">
+      <input type="text" id="searchBox" placeholder="Search..." />
+    </div>
+    <div class="user-info">
+      <img src="profile.jpg" alt="Profile" class="user-image" />
+      <span>Welcome, Admin</span>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar hide" id="sidebar">
+    <span class="close-btn" onclick="closeSidebar()">×</span>
+    <h2><i class="fas fa-user-shield"></i> Admin Panel</h2>
+    <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    <a href="#"><i class="fas fa-users"></i> Customers</a>
+    <a href="#"><i class="fas fa-file-alt"></i> Projects</a>
+    <a href="#"><i class="fas fa-shopping-cart"></i> Orders</a>
+    <a href="#"><i class="fas fa-boxes"></i> Inventory</a>
+    <a href="#"><i class="fas fa-user-circle"></i> Accounts</a>
+    <a href="#"><i class="fas fa-cogs"></i> Settings</a>
+    <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main" id="mainContent">
+    <div class="panel">
+      <i class="fas fa-users"></i>
+      <h3>54</h3>
+      <p>Customers</p>
+    </div>
+    <div class="panel">
+      <i class="fas fa-file-alt"></i>
+      <h3>79</h3>
+      <p>Projects</p>
+    </div>
+    <div class="panel">
+      <i class="fas fa-shopping-cart"></i>
+      <h3>124</h3>
+      <p>Orders</p>
+    </div>
+    <div class="panel">
+      <i class="fas fa-dollar-sign"></i>
+      <h3>$6K</h3>
+      <p>Income</p>
+    </div>
+    <div class="panel">
+      <i class="fas fa-user-circle"></i>
+      <h3>150</h3>
+      <p>Accounts</p>
+    </div>
+  </div>
+
+  <!-- Containers -->
+  <div class="container-wrapper">
+    <div class="container">
+      <h3>Recent Projects</h3>
+      <button class="see-all-btn">See All</button>
+      <table class="custom-table">
+        <thead>
+          <tr>
+            <th>Project Title</th>
+            <th>Department</th>
+            <th>status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>UI/UX design</td>
+            <td>UI Team</td>
+            <td>Review</td>
+          </tr>
+          <tr>
+            <td>Web Devolopment</td>
+            <td>Frontend</td>
+            <td>In progress</td>
+          </tr>
+          <tr>
+            <td>Lishop app</td>
+            <td>Mobile Team</td>
+            <td>Pending</td>
+          </tr>
+          <tr>
+            <td>UI/UX design</td>
+            <td>UI Team</td>
+            <td>Review</td>
+          </tr>
+          <tr>
+            <td>Web Devolopment</td>
+            <td>Frontend</td>
+            <td>In progress</td>
+          </tr>
+          <tr>
+            <td>Lishop app</td>
+            <td>Mobile Team</td>
+            <td>Pending</td>
+          </tr>
+          <tr>
+            <td>UI/UX design</td>
+            <td>UI Team</td>
+            <td>Review</td>
+          </tr>
+          <tr>
+            <td>Web Devolopment</td>
+            <td>Frontend</td>
+            <td>In progress</td>
+          </tr>
+          <tr>
+            <td>Lishop app</td>
+            <td>Mobile Team</td>
+            <td>pending</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="new-customers-container">
+  <div class="new-customers-header">
+    <h3>New Customers</h3>
+    <button class="see-all-btn">See All</button>
+  </div>
+
+ <div class="customer-list">
+  <div class="customer-card">
+    <img src="profile.jpg" alt="User" class="customer-image">
+    <div class="customer-info">
+      <strong>John Smith</strong><br>
+      <small>john@example.com</small>
+    </div>
+    <div class="customer-actions">
+      <i class="fas fa-phone"></i>
+      <i class="fas fa-comment"></i>
+    </div>
+  </div>
+
+  <div class="customer-card">
+    <img src="profile.jpg" alt="User" class="customer-image">
+    <div class="customer-info">
+      <strong>Jane Doe</strong><br>
+      <small>jane@example.com</small>
+    </div>
+    <div class="customer-actions">
+      <i class="fas fa-phone"></i>
+      <i class="fas fa-comment"></i>
+    </div>
+  </div>
+
+  <div class="customer-card">
+    <img src="profile.jpg" alt="User" class="customer-image">
+    <div class="customer-info">
+      <strong>Tony Stark</strong><br>
+      <small>tony@example.com</small>
+    </div>
+    <div class="customer-actions">
+      <i class="fas fa-phone"></i>
+      <i class="fas fa-comment"></i>
+    </div>
+  </div>
+
+  <div class="customer-card">
+    <img src="profile.jpg" alt="User" class="customer-image">
+    <div class="customer-info">
+      <strong>Bruno Mars</strong><br>
+      <small>bruno@example.com</small>
+    </div>
+    <div class="customer-actions">
+      <i class="fas fa-phone"></i>
+      <i class="fas fa-comment"></i>
+    </div>
+  </div>
+</div>
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("hide");
+    }
+
+    function closeSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.add("hide");
+    }
+  </script>
+</body>
+</html>
